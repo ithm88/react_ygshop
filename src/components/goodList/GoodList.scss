@@ -1,0 +1,109 @@
+.yg-gl {
+    .yg-gl-nav {
+      .gl-nav {
+        background-color: var(--themeColor);
+        color: white;
+      }
+    }
+  
+    .yg-gl-search {
+    }
+    .yg-gl-tab {
+      background-color: white;
+      .gl-tab-zh {
+        height: calc(100vh - 3.466667rem);
+        .tab-zh-item {
+          display: flex;
+          height: 3.2rem;
+          align-items: center;
+          padding:0.133333rem;
+          border-bottom: 1px solid #ddd;
+          .zh-item-left {
+            img {
+              width: 2.666667rem;
+              height: 2.666667rem;
+            }
+          }
+  
+          .zh-item-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 3.2rem;
+            margin-left: 0.133333rem;
+            .item-right-top {
+            }
+  
+            .item-right-bottom {
+              color:var(--themeColor);
+            }
+          }
+        }
+      }
+    }
+  }
+  //---------------------------------------------------
+// .yg-gl-con {
+//     .yg-index-nav {
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//       .index-nav {
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         background-color: var(--themeColor);
+//         color: white;
+//       }
+//     }
+  
+//     .yg-index-search {
+//       searchinput {
+  
+//       }
+//     }
+//     //列表导航开始
+//     .yg-index-lists {
+//         margin-top: 2.533333rem;
+//         //综合
+//         .gl-tab-zh {
+//             display: flex;
+//             flex-direction: column;
+//             height: calc(100vh - 2.333333rem);
+//             padding: 0.266667rem;
+//             .tab-zh-item {
+//                 margin-bottom: 0.933333rem;
+//                 height: 2.666667rem;
+//                 display: flex;
+//                 align-items: center;
+//               .zh-item-let {
+//                   width: 2.133333rem;
+//                   height: 1.6rem;
+//                 img {
+//                     width: 2.4rem;
+//                     height: 2.4rem;
+//                 }
+//               }
+//               .zh-item-right {
+//                   margin-left: 0.533333rem;
+//                   display: flex;
+//                   flex-direction: column;
+//                   justify-content: space-between;
+//                   height: 1.6rem;
+//                 h2 {
+//                     font-size: 0.373333rem;
+//                     font-weight: 200;
+//                 }
+//                 h3 {
+//                     font-size: 0.32rem;
+//                     color: var(--themeColor);
+//                 }
+//               }
+//             }
+//           }
+//     }
+
+
+//   }

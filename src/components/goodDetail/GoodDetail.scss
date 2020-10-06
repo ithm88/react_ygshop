@@ -1,0 +1,374 @@
+.yg-detail {
+    background-color: white;
+    height: 100vh;
+    .yg-detail-nav {
+      background-color: var(--themeColor);
+      color: white;
+      .am-navbar-title {
+        color: white;
+      }
+    }
+    .yg-detail-swiper {
+      width: 100%;
+      height: 6.666667rem !important;
+      .imageWrapper {
+        height: 6.666667rem !important;
+        width: 80%;
+        text-align: center;
+        img {
+          width: 80% !important;
+          height: 100%;
+        }
+      }
+    }
+    .yg-detail-price {
+      height: 0.8rem;
+      width: 100%;
+      padding: 0.106667rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .price-left {
+        .title1 {
+          color: var(--themeColor);
+          font-size: 0.533333rem;
+        }
+      }
+  
+      .price-right {
+        display: flex;
+        align-items: center;
+        i.iconfont.icon-fenxiang {
+          margin-right: 0.213333rem;
+        }
+  
+        i.iconfont.icon-shoucang {
+          margin-right: 0.213333rem;
+        }
+        .active{
+            color:red
+        }
+      }
+    }
+    .yg-detail-title {
+      height: 1.066667rem;
+      padding: 0.053333rem 0.266667rem;
+      font-size: 0.426667rem;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .yg-detail-richtext {
+        margin-bottom: 1.333333rem;
+      .richtext-title {
+        text-align: center;
+        height: 0.8rem;
+        line-height: 0.8rem;
+      }
+  
+      .richtext-content {
+      }
+    }
+    .yg-detail-bottom {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      height: 1.333333rem;
+      .bottom-contact {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .iconfont.icon-lianxikefu {
+        }
+  
+        .title {
+        }
+      }
+  
+      .bottom-cart {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .iconfont.icon-gouwuche {
+        }
+  
+        .title {
+        }
+      }
+  
+      .bottom-addToCart {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title1 {
+          border-radius: 0.533333rem;
+          height: 0.8rem;
+          text-align: center;
+          line-height: 0.8rem;
+          width: 2.133333rem;
+          background-color: #fcaa23;
+          color: white;
+        }
+      }
+  
+      .bottom-buy {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title2 {
+          border-radius: 0.533333rem;
+          height: 0.8rem;
+          text-align: center;
+          line-height: 0.8rem;
+          width: 2.133333rem;
+          background-color: var(--themeColor);
+          color: white;
+        }
+      }
+    }
+  }
+  
+
+// .yg-detail {
+//     background-color: white;
+//     height: 100vh;
+//     .yg-detail-nav {
+//       background-color: var(--themeColor);
+//       color: white;
+//       .am-navbar-title {
+//         color: white;
+//       }
+//     }
+//     .yg-detail-swiper {
+//       width: 100%;
+//       height: 6.666667rem !important;
+//       .imageWrapper {
+//         height: 6.666667rem !important;
+//         width: 80%;
+//         text-align: center;
+//         img {
+//           width: 80% !important;
+//           height: 100%;
+//         }
+//       }
+//     }
+//     .yg-detail-price {
+//       margin-top: 0.533333rem;
+//       height: 0.8rem;
+//       width: 100%;
+//       padding: 0.106667rem;
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       padding-left: 0.533333rem;
+//       .price-left {
+//         .title1 {
+//           color: var(--themeColor);
+//           font-size: 0.533333rem;
+//         }
+//       }
+  
+//       .price-right {
+//         display: flex;
+//         align-items: center;
+//         padding: 0 0.533333rem;
+//         i.iconfont.icon-fenxiang {
+//           margin-right: 0.213333rem;
+//         }
+  
+//         i.iconfont.icon-shoucang {
+//           margin-right: 0.213333rem;
+//         }
+//         .active{
+//             color:red
+//         }
+//       }
+//     }
+//     // 描述
+//     .price-title{
+//         padding: 0 0.533333rem;
+//         font-size: 0.32rem;
+//         display: -webkit-box;
+//         overflow: hidden;
+//         margin: 0.533333rem 0;
+//         font-weight: 100;
+//         color: rgb(83, 95, 93);
+//     }
+//     //这个是底部footer 购物车
+//     .detail_footer {
+//         position: fixed;
+//         bottom: 0;
+//         left: 0;
+//         background: #fff;
+//         width: 100%;
+//         height: 1.6rem;
+//         display: flex;
+//         justify-content: space-between;
+//         text-align: center;
+//         align-items: center;
+//         .detail_kefu {
+//             height: 1.333333rem;
+//             flex: 1;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             text-align: center;
+//           .icon_kefu {
+            
+//           }
+      
+//           .icon_titlekefu {
+      
+//           }
+//         }
+      
+//         .detail_cart {
+//             height: 1.333333rem;
+//             flex: 1;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             text-align: center;
+//           .icon_cart {
+
+//           }
+      
+//           .title_cart {
+            
+//           }
+//         }
+      
+//         .detail_add {
+//             flex: 2;
+//             height: 0.8rem;
+//             width: 1.333333rem;
+//             line-height: 0.8rem;
+//             text-align: center;
+//             background-color: rgb(252, 169, 35);
+//             border-radius: 0.533333rem;
+//             color: #fff;
+//             font-weight: normal;
+//             font-size: 0.266667rem;
+//           h2 {
+//             font-weight: 100;
+//           }
+//         }
+      
+//         .detail_pay {
+//             flex: 2;
+//             height: 0.8rem;
+//             width: 1.333333rem;
+//             line-height: 0.8rem;
+//             text-align: center;
+//             background-color: var(--themeColor);
+//             border-radius: 0.533333rem;
+//             color: #fff;
+//             font-weight: normal;
+//             font-size: 0.266667rem;
+//           h2 {
+//             font-weight: 100;
+//           }
+//         }
+//       }
+//     //========
+    
+//     // .yg-detail-title {
+//     //   height: 1.066667rem;
+//     //   padding: 0.053333rem 0.266667rem;
+//     //   font-size: 0.426667rem;
+//     //   display: -webkit-box;
+//     //   overflow: hidden;
+//     //   -webkit-line-clamp: 2;
+//     //   -webkit-box-orient: vertical;
+//     // }
+//     // .yg-detail-richtext {
+//     //     margin-bottom: 1.333333rem;
+//     //   .richtext-title {
+//     //     text-align: center;
+//     //     height: 0.8rem;
+//     //     line-height: 0.8rem;
+//     //   }
+  
+//     //   .richtext-content {
+//     //   }
+//     // }
+//     // .yg-detail-bottom {
+//     //   position: fixed;
+//     //   bottom: 0;
+//     //   left: 0;
+//     //   width: 100%;
+//     //   display: flex;
+//     //   justify-content: space-between;
+//     //   background-color: #fff;
+//     //   height: 1.333333rem;
+//     //   .bottom-contact {
+//     //     flex: 1;
+//     //     display: flex;
+//     //     flex-direction: column;
+//     //     justify-content: center;
+//     //     align-items: center;
+//     //     .iconfont.icon-lianxikefu {
+//     //     }
+  
+//     //     .title {
+//     //     }
+//     //   }
+  
+//     //   .bottom-cart {
+//     //     flex: 1;
+//     //     display: flex;
+//     //     flex-direction: column;
+//     //     justify-content: center;
+//     //     align-items: center;
+//     //     .iconfont.icon-gouwuche {
+//     //     }
+  
+//     //     .title {
+//     //     }
+//     //   }
+  
+//     //   .bottom-addToCart {
+//     //     flex: 2;
+//     //     display: flex;
+//     //     align-items: center;
+//     //     justify-content: center;
+//     //     .title1 {
+//     //       border-radius: 0.533333rem;
+//     //       height: 0.8rem;
+//     //       text-align: center;
+//     //       line-height: 0.8rem;
+//     //       width: 2.133333rem;
+//     //       background-color: #fcaa23;
+//     //       color: white;
+//     //     }
+//     //   }
+  
+//     //   .bottom-buy {
+//     //     flex: 2;
+//     //     display: flex;
+//     //     align-items: center;
+//     //     justify-content: center;
+//     //     .title2 {
+//     //       border-radius: 0.533333rem;
+//     //       height: 0.8rem;
+//     //       text-align: center;
+//     //       line-height: 0.8rem;
+//     //       width: 2.133333rem;
+//     //       background-color: var(--themeColor);
+//     //       color: white;
+//     //     }
+//     //   }
+//     // }
+//   }
+  

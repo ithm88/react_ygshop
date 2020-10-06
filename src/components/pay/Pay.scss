@@ -1,0 +1,200 @@
+.yg-pay {
+    .yg-py-nav {
+      background-color: var(--themeColor);
+      color: white;
+      .am-navbar-title {
+        color: white;
+      }
+    }
+    .qrcode_pay_opcity{
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        background: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        
+    }
+    .qrcode_pay_list{
+        position: fixed;
+        height: 8rem;
+        width: 8rem;
+        display: flex;
+        margin-left: 0.933333rem;
+        margin-top: 4rem;
+        background: var(--themeColor);
+        border-radius: 0.266667rem;
+        z-index: 1000;
+        
+        // 微信扫码支付
+        .qrcode_pay{
+            z-index: 100;
+            position: fixed;
+            left: 0;
+            top: 0;
+            margin: auto;
+            right: 0;
+            bottom: 0;
+            border: 0.266667rem solid greenyellow;
+            opacity: 1;
+        }
+        //取消支付
+        .qrcode_pay_clear{
+            opacity: 1;
+            z-index: 101;
+            position: fixed;
+            width: 50%;
+            text-align: center;
+            //真实支付
+            top: 12.133333rem;
+            //测试支付
+            left: 2.4rem;
+            font-size: 0.533333rem;
+            color: #000;
+            opacity: 1;
+            background: #fff;
+            border-radius: 0.08rem;
+        }
+        img{
+            width: 55%;
+            height: 30%;
+        }
+    }
+    
+    .yg-pay-address {
+      height: 2.666667rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #ddd;
+      .pay-address-btn {
+        width: 4rem;
+        height: 1.333333rem;
+        border: 1px solid var(--themeColor);
+        border-radius: 0.8rem;
+        line-height: 1.333333rem;
+        text-align: center;
+        color: var(--themeColor);
+      }
+    }
+    .yg-pay-list {
+      background-color: white;
+      .list-title {
+        color: #5a5248;
+        font-weight: 200;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        margin-left: 0.133333rem;
+      }
+  
+      .pay-list-content {
+        .content-list-item {
+          height: 2.666667rem;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #ddd;
+          .list-item-mid {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 2.4rem;
+              width: 2.4rem;
+            }
+          }
+  
+          .list-item-right {
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 2.666667rem;
+            .right-top {
+              .right-top-title {
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+              }
+            }
+  
+            .right-bottom {
+              display: flex;
+              justify-content: space-between;
+              .right-bottom-left {
+                color: var(--themeColor);
+              }
+  
+              .right-bottom-right {
+                height: 0.8rem;
+                display: flex;
+                align-items: center;
+                i.iconfont.icon-iconset0187 {
+                  margin-right: 0.266667rem;
+                }
+  
+                span.num {
+                  margin-right: 0.266667rem;
+                }
+  
+                i.iconfont.icon-icon- {
+                  margin-right: 0.266667rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .yg-pay-bottom {
+      background-color: white;
+      padding: 0 0.266667rem;
+      position: fixed;
+      width: 100%;
+      height: 1.333333rem;
+      line-height: 1.333333rem;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      .bottom-left {
+        .title1 {
+          font-size: 0.426667rem;
+        }
+        .price {
+          font-size: 0.426667rem;
+          color: var(--themeColor);
+        }
+      }
+  
+      .bottom-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title2 {
+          height: 0.8rem;
+          line-height: 0.8rem;
+          text-align: center;
+          color: white;
+          width: 2.133333rem;
+          border-radius: 0.533333rem;
+          font-size: 0.426667rem;
+          background-color: #b6b6b6;
+        }
+        .title3 {
+          height: 0.8rem;
+          line-height: 0.8rem;
+          text-align: center;
+          color: white;
+          width: 2.133333rem;
+          border-radius: 0.533333rem;
+          font-size: 0.426667rem;
+          background-color: var(--themeColor);
+        }
+      }
+    }
+  }
+  

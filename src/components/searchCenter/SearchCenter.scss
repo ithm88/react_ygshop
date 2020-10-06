@@ -1,0 +1,53 @@
+.yg-sc {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    overflow-y: scroll;
+    .yg-sc-nav {
+        background: var(--themeColor);
+        font-size: 0.533333rem;
+        color: #fff;
+        .am-navbar-title{
+            color: #fff;
+            font-size: 0.586667rem;
+        }
+        .am-icon .am-icon-left .am-icon-md{
+            font-size: 0.693333rem;
+        }
+    }
+    
+    .yg-sc-search {
+    
+   }
+  //产品列表
+  .yg-sc-list {
+    margin-top: 10px;
+    padding: 0.4rem;
+    overflow-y: scroll;
+    height: auto;
+    .yg-sc-list-con{
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    .yg-sc-list-img{
+        width: 4.266667rem;   
+        height: 4.266667rem;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .yg-sc-list-item {
+        width: 350px;
+        height: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // white-space: nowrap;
+        font-size: 0.533333rem;
+        line-height: 0.746667rem;
+        border-bottom: 1px solid var(--themeColor);
+    }
+    }
+  }
+}

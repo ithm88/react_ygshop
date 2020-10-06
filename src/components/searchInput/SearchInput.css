@@ -1,0 +1,16 @@
+.search-input {
+  height: 1.333333rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--themeColor);
+}
+.search-input .search-input-content {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.066667rem;
+  width: 9.333333rem;
+}

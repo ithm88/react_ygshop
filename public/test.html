@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信支付</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
+</head>
+<body>
+    <div>
+        <form action="http://localhost:18001/pay" method="post">
+            <label for="orderNo">
+               商品订单号: <input name="orderNo" value="DF11223">
+            </label>
+            <label for="body">
+                商品描述:<input name="body" value="iponethe">
+            </label>
+            <label for="price">
+                商品价格:<input name="price" value="111">
+            </label>
+
+            <button type="submit">点击提交</button>
+        </form>
+        
+
+    </div>
+    <div id="app">
+        这个是跨域测试
+        <button class="hahaha" @click="handleclick">点击跨域提交</button>
+    </div>
+</body>
+<script>
+    let login = document.querySelector(".hahaha");
+    //axios.post("http://localhost:18001/pay",{
+        // axios.post("http://115.29.148.10:8989/login/loginUser?telephone=13923815937&password=123456",{
+        //     // orderNo:this.state.price.orderNo,
+        //     // body:this.state.price.body,
+        //     // price:this.state.price.prices
+        // }).then((res)=>{
+        //     // console.log(this.state.price.orderNo)
+        //     // console.log(this.state.price.body)
+        //     // console.log(this.state.price.prices)
+        //     console.log(res)
+        // }).catch((err)=>console.log(err))
+        let vm = new Vue({
+            el:"app",
+            data:{
+
+            },
+            method:{
+                handleclick(){
+                    console.log("进来了")
+                   axios.post("http://115.29.148.10:8989/login/loginUser?telephone=13923815937&password=123456",{
+                      // orderNo:this.state.price.orderNo,
+                      // body:this.state.price.body,
+                      // price:this.state.price.prices
+                  }).then((res)=>{
+                      // console.log(this.state.price.orderNo)
+                      // console.log(this.state.price.body)
+                      // console.log(this.state.price.prices)
+                      console.log(res)
+                  }).catch((err)=>console.log(err))
+                }
+            }
+        })
+</script>
+<!-- 
+
+-- 一级分类
+SELECT * FROM sp_category WHERE cat_pid = 0 AND cat_level = 0   -- 大家电 热门推荐  海外购  苏宁房产  手机相机
+
+
+-- 二级分类
+SELECT * FROM sp_category WHERE cat_pid = 1 AND cat_level = 1   -- 大家电下面的分类 电视 空调 洗衣机 冰箱
+
+SELECT * FROM sp_category WHERE cat_pid = 52 AND cat_level = 1  -- 热门推荐下面的 圣诞狂欢 冲锋衣
+
+SELECT * FROM sp_category WHERE cat_pid = 70 AND cat_level = 1  -- 海外购下面的 国际名牌 母婴儿童 美妆 .....
+
+SELECT * FROM sp_category WHERE cat_pid = 172 AND cat_level = 1 -- 苏宁房产下面的 苏宁房产 苏宁置业
+
+-- 三级分类
+SELECT * FROM sp_category WHERE cat_pid BETWEEN 0 AND 51; -- 这里需要用到分组 和连接查询
+-- 这里需要用到分组 和连接查询
+-- 这里需要用到分组 和连接查询
+-- 这里需要用到分组 和连接查询
+-- 这里需要用到分组 和连接查询
+
+
+ -->
+</html>
